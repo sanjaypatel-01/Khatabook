@@ -1,0 +1,25 @@
+{
+  "name": "khatabook_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch",
+    "start": "nodemon --exec \"npm run build-css\" app.js && browser-sync start --proxy \"http://localhost:3000\" --files \"./public/output.css, ./views/**/*.ejs\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
