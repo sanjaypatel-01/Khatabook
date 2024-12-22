@@ -18,10 +18,10 @@
         </nav>
         <div class="px-10 hisaabs">
             <h3 class="capitalize text-2xl font-medium mb-5 mt-10 tracking-tight">create new hisaab</h3>
-            <form action="">
-                <input class="text-md px-3 py-2 w-1/2 mb-5 rounded-md bg-zinc-200" type="text" placeholder="Shopping ka hisaab, ghar ka kharch...">
-                <textarea class="block w-1/2 px-3 py-2 resize-none by-zinc-200 rounded-md" name="" id="" placeholder="write your hisaab."></textarea>
-                <input class="block mt-5 px-5 py-3 bg-blue-500 text-white rounded-md" type="submit" value="Create Hisaab">
+            <form action="/createhisaab" method="post">
+                <input name="title" class="text-md px-3 py-2 w-1/2 mb-5 rounded-md bg-zinc-200" type="text" placeholder="Shopping ka hisaab, ghar ka kharch...">
+                <textarea name="content" class="block w-1/2 px-3 py-2 resize-none by-zinc-200 rounded-md" name="" id="" placeholder="write your hisaab."></textarea>
+                <input type="submit" class="block mt-5 px-5 py-3 bg-blue-500 text-white rounded-md" value="Create Hisaab">
             </form>
         </div>
     </main>

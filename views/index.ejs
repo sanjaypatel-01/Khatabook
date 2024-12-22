@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link href="/output.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -22,13 +24,13 @@
             <% if(files.length > 0) {
                 %>
                 <% files.forEach(function(file){ %>
-                    <div class="hisaab w-fit items-center py-3 px-5 mb-3 gap-20 bg-blue-500 flex justify-between rounded">
+                    <div class="hisaab w-fit items-center py-3 px-5 mb-3 gap-20 bg-blue-500 flex justify-between rounded-md">
                     <div class="flex gap-4 text-white items-center">
-                        <h3 class="text-2xl"><%= file %></h3>
+                        <h3 class="text-2xl"><%= file.split(".")[0] %></h3>
                         <a href=""><i class="w-6 h-6 text-blue-500 flex items-center justify-center"></i></a>
                     </div>    
                     <div class="flex gap-3 items-center">
-                        <a href=""><i class="text-white ri-pencil-line"></i></a>
+                        <a href="/edit/<%= file %>"><i class="text-white ri-pencil-line"></i></a>
                         <a href=""><i class="w-6 h-6 text-red-500 flex items-center justify-center"></i></a>
                     </div>
                 </div>
