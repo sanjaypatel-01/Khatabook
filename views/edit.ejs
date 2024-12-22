@@ -20,7 +20,7 @@
             <h3 class="text-2xl font-medium mb-5 mt-10 tracking-tight">you're editing hisaab of <span class="text-blue-500"> <%= filename.split(".")[0] %> </span> date </h3>
             <form class="" action="/update/<%= filename %>" method="post">
                 <textarea class="block w-1/2 px-3 py-2 resize-none bg-zinc-200 rounded-md" name="content" id=""> <%= filedata %> </textarea>
-                <input type="submit" placeholder="Update Hisaab" class="block mt-5 px-5 py-3 bg-blue-500 text-white rounded-md">
+                <input type="submit" value="Update Hisaab" class="block mt-5 px-5 py-3 bg-blue-500 text-white rounded-md cursor-pointer">
             </form>
         </div>
     </main>
